@@ -1,4 +1,4 @@
-import $ from '../static/vendor/jquery-2.2.3.min';
+import $ from 'jquery';
 import greeting from './greeting';
 import './bold.css';
 
