@@ -2,7 +2,7 @@
   "name": "wrap-bow-ribbon",
   "version": "1.0.0",
   "scripts": {
-    "build": "r.js -o paths.jquery=../static/vendor/jquery-2.2.3.min baseUrl=src/ name=main out=dist/bundle.js",
+    "build": "webpack src/app.js dist/bundle.js",
     "start": "babel-node server"
   },
   "author": "",
@@ -15,7 +15,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.6.0",
     "express": "^4.13.4",
-    "requirejs": "^2.2.0"
+    "webpack": "^1.13.0"
   },
   "babel": {
     "presets": [
