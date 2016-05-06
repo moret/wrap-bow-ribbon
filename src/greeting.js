@@ -1,3 +1,1 @@
-define(function () {
-  return 'Hello, World!';
-});
+module.exports = 'Hello, World!';
