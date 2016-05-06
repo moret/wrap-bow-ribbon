@@ -2,7 +2,7 @@
   "name": "wrap-bow-ribbon",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack src/app.js dist/bundle.js --module-bind 'js=babel'",
+    "build": "webpack --progress --colors --watch",
     "start": "babel-node server"
   },
   "author": "",
