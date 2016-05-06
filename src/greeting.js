@@ -1,1 +1,3 @@
-greeting = 'Hello, World!';
+define(function () {
+  return 'Hello, World!';
+});
