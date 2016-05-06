@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -8,6 +9,13 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('./dist/styles.css', {
       allChunks: true
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: './dist/vendor.bundle.js',
+      minChunks: function(module, count) {
+        return module.resource && module.resource.match(/node_modules/);
+      }
     })
   ],
   module: {
