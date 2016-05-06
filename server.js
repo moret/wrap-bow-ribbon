@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express();
 
-app.use('/dist', express.static('src'));
+app.use('/dist', express.static('dist'));
 app.use('/', express.static('static'));
 
 app.listen(3000, () => {
